@@ -18,8 +18,8 @@
         <div class="nav-left">
             <div class="logo">Dashboard</div>
             <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#">Register</a>
+                <a href="index.jsp" class="active">Home</a>
+                <a href="register.jsp">Register</a>
             </div>
         </div>
         <div class="user-section">
@@ -27,7 +27,7 @@
             <div class="user-dropdown">
                 <button class="dropdown-btn" onclick="toggleDropdown()">Profile ▼</button>
                 <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="edit-profile.jsp" class="dropdown-item">📝 Edit Profile</a>
+                    <a href="edit_profile.jsp" class="dropdown-item">📝 Edit Profile</a>
                 </div>
             </div>
             <a href="logout"><button class="logout-btn">Logout</button></a>

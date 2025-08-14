@@ -2,7 +2,7 @@
 <%@page import="dao.AdminsDao"%>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
