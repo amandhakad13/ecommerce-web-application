@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+}
+
+.insert-container {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	padding: 40px;
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 500px;
+	max-width: 90vw;
+}
+
+.insert-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.insert-header h1 {
+	color: white;
+	font-size: 2.2rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.insert-header p {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 0.9rem;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-group label {
+	display: block;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.9rem;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+	width: 100%;
+	padding: 15px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+.form-group textarea {
+	resize: vertical;
+	min-height: 80px;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+	outline: none;
+	border-color: rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.15);
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+	display: flex;
+	gap: 15px;
+	margin-top: 30px;
+}
+
+.insert-btn {
+	flex: 1;
+	padding: 15px;
+	background: linear-gradient(135deg, #4CAF50, #45a049);
+	border: none;
+	border-radius: 12px;
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.insert-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
+	background: linear-gradient(135deg, #45a049, #3d8b40);
+}
+
+.cancel-btn {
+	flex: 1;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+	transform: translateY(-3px);
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+}
+
+.back-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+}
+
+.required {
+	color: #ff6b6b;
+}
+
+@media ( max-width : 580px) {
+	.insert-container {
+		padding: 30px 25px;
+	}
+	.insert-header h1 {
+		font-size: 1.9rem;
+	}
+	.button-group {
+		flex-direction: column;
+	}
+}
