@@ -38,7 +38,8 @@
             	boolean isPresent = adao.login(uname, pword);
             	
             	if(isPresent) {
-            		session.setAttribute("username", uname);
+            		HttpSession hs = request.getSession();
+            		hs.setAttribute("username", uname);
             		response.sendRedirect("index.jsp");
             	}
             	else {

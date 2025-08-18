@@ -5,8 +5,9 @@
 
 <%
 	
-	String username = (String) session.getAttribute("username");
-	if(username==null) {
+	HttpSession hs = request.getSession(false);
+	String username = (String)hs.getAttribute("username");
+	if(hs.getAttribute("username")==null || hs==null) {
 		response.sendRedirect("login.jsp");
 	}
 %>

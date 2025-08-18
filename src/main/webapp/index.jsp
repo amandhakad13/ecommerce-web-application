@@ -3,8 +3,9 @@
 <html>
 
 <%
-	String uname = (String) session.getAttribute("username");
-	if(uname == null) {
+	HttpSession hs = request.getSession(false);
+	String uname = (String)hs.getAttribute("username");
+	if(hs.getAttribute("username")==null || hs==null) {
 		response.sendRedirect("login.jsp");
 	}
 %>
@@ -40,11 +41,11 @@
         						 Use the tools below to add, view, edit, or remove records.</p>
         
         <div class="management-grid">
-            <div class="management-card">
-                <div class="card-icon">👥</div>
-                <h3 class="card-title">Customer Management</h3>
-                <p class="card-description">Maintain customer information for orders and records.</p>
-            </div>
+	        <div class="management-card" onclick="navigateTo('customer')">
+	            <div class="card-icon">👥</div>  
+	            <h3 class="card-title">Customer Management</h3>
+	            <p class="card-description">Maintain customer information for orders and records.</p>
+	        </div>   
             
             <div class="management-card">
                 <div class="card-icon">📦</div>
@@ -64,6 +65,10 @@
         function toggleDropdown() {
             const dropdown = document.getElementById('dropdownMenu');
             dropdown.classList.toggle('show');
+        }
+        
+        function navigateTo(section) {
+            window.location.href = section + '.jsp';
         }
         
         document.addEventListener('click', function(event) {
