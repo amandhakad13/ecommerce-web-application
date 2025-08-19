@@ -47,19 +47,19 @@
                 <button class="action-btn insert-btn">Insert Customer</button>
             </div>
             
-            <div class="management-card" onclick="navigateTo('search-customer')">
+            <div class="management-card" onclick="navigateTo('search_customer')">
                 <div class="card-title">🔍 Search by ID</div>
                 <p style="margin-bottom: 15px; opacity: 0.9;">Find specific customer using ID</p>
                 <button class="action-btn search-btn">Search Customer</button>
             </div>
             
-            <div class="management-card" onclick="navigateTo('display-customers')">
+            <div class="management-card" onclick="navigateTo('display_all_customers')">
                 <div class="card-title">📋 Display All</div>
                 <p style="margin-bottom: 15px; opacity: 0.9;">View all customers in the database</p>
                 <button class="action-btn display-btn">Display All Customers</button>
             </div>
             
-            <div class="management-card" onclick="navigateTo('update-customer')">
+            <div class="management-card" onclick="navigateTo('update_customer')">
                 <div class="card-title">✏️ Update Customer</div>
                 <p style="margin-bottom: 15px; opacity: 0.9;">Modify existing customer information</p>
                 <button class="action-btn update-btn">Update Customer</button>
