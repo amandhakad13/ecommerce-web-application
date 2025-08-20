@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-left">
-            <div class="logo">Dashboard</div>
+            <div class="logo">Ecommerse</div>
             <div class="nav-links">
                 <a href="index.jsp" class="active">Home</a>
                 <a href="register.jsp">Register</a>
@@ -36,8 +36,8 @@
     </nav>
 
     <section class="hero-section">
-        <h1 class="hero-title">Management Dashboard</h1>
-        <p class="hero-subtitle">Welcome to the Management Dashboard. From here, you can manage Categories, Customers, and Products efficiently. 
+        <h1 class="hero-title">Ecommerse Management Dashboard</h1>
+        <p class="hero-subtitle">Welcome to the Ecommerse Management Dashboard. From here, you can manage Categories, Customers, and Products efficiently. 
         						 Use the tools below to add, view, edit, or remove records.</p>
         
         <div class="management-grid">

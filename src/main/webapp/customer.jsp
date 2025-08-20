@@ -47,7 +47,7 @@
                 <button class="action-btn insert-btn">Insert Customer</button>
             </div>
             
-            <div class="management-card" onclick="navigateTo('search_customer')">
+            <div class="management-card" onclick="navigateTo('search_by_id_customer')">
                 <div class="card-title">🔍 Search by ID</div>
                 <p style="margin-bottom: 15px; opacity: 0.9;">Find specific customer using ID</p>
                 <button class="action-btn search-btn">Search Customer</button>
@@ -65,7 +65,7 @@
                 <button class="action-btn update-btn">Update Customer</button>
             </div>
             
-            <div class="management-card" onclick="navigateTo('delete-customer')">
+            <div class="management-card" onclick="navigateTo('delete_customer')">
                 <div class="card-title">🗑️ Delete Customer</div>
                 <p style="margin-bottom: 15px; opacity: 0.9;">Remove customers from the database</p>
                 <button class="action-btn delete-btn">Delete Customer</button>

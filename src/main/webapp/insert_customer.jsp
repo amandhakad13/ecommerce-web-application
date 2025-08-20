@@ -33,7 +33,7 @@
             </div>
             
             <div class="form-group">
-                <label for="customerEmail">Email Address <span class="required">*</span></label>
+                <label for="customerEmail">Email <span class="required">*</span></label>
                 <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter email address" required>
             </div>
             
@@ -44,7 +44,7 @@
             
             <div class="form-group">
                 <label for="customerAddress">Address</label>
-                <textarea id="customerAddress" name="customerAddress" placeholder="Enter customer address (optional)"></textarea>
+                <textarea id="customerAddress" name="customerAddress" placeholder="Enter customer address" required></textarea>
             </div>
             
             <div class="button-group">

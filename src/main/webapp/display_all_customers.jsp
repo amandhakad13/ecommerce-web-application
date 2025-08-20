@@ -35,7 +35,7 @@
                 <div>Name</div>
                 <div>Email</div>
                 <div>Phone</div>
-                <div>Actions</div>
+                <div>Address</div>
             </div>
             
             <%
@@ -50,10 +50,7 @@
                     <div><%= c.getName() %></div>
                     <div><%= c.getEmail() %></div>
                     <div><%= c.getPhone() %></div>
-                    <div class="action-buttons">
-                        <button class="edit-btn" onclick="editCustomer(${customer.id})">Edit</button>
-                        <button class="delete-btn" onclick="deleteCustomer(${customer.id})">Delete</button>
-                    </div>
+                    <div><%= c.getAddress() %></div>
                 </div>
             <%
             	}
@@ -63,13 +60,12 @@
 
     <script>
         
-        function editCustomer(id) {
-            window.location.href = 'update-customer.jsp?customerId=' + id;
+        function editCustomer() {
+            window.location.href = 'update_customer.jsp';
         }
         
-        function deleteCustomer(id) {
-            if (confirm('Are you sure you want to delete customer ID: ' + id + '? This action cannot be undone.')) {
-                window.location.href = 'customerServlet?action=delete&customerId=' + id;
+        function deleteCustomer() {
+                window.location.href = 'delete_customer.jsp';
             }
         }
     </script>

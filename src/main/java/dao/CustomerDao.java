@@ -81,6 +81,7 @@ public class CustomerDao {
 		Connection con = DBConnection.getConnection();
 		String query = "delete from customer where c_id = ?";
 		PreparedStatement pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, id);
 		int delete = pstmt.executeUpdate();
 		return delete;
 	}

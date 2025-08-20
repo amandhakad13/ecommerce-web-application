@@ -44,9 +44,6 @@
             <button type="submit" class="register-btn">Create Account</button>
         </form>
         
-        <div class="login-link">
-            <p>Already have an account? <a href="login.jsp">Sign In</a></p>
-        </div>
     </div>
 
     <script>

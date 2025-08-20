@@ -32,7 +32,7 @@
         <!-- Search Section -->
         <div class="search-section">
             <div class="section-title">🔍 Search Customer</div>
-            <form action="update_customer.jsp" method="GET">
+            <form action="update_customer.jsp" method="Post">
                 <div class="form-group">
                     <label for="searchId">Customer ID</label>
                     <input type="number" id="searchId" name="customerId" placeholder="Enter customer ID to search" required>
