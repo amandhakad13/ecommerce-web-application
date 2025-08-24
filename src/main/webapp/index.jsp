@@ -47,7 +47,7 @@
 	            <p class="card-description">Maintain customer information for orders and records.</p>
 	        </div>   
             
-            <div class="management-card">
+            <div class="management-card" onclick="navigateTo('product')">
                 <div class="card-icon">📦</div>
                 <h3 class="card-title">Product Management</h3>
                 <p class="card-description">Manage all products available in the store.</p>
