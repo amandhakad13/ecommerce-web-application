@@ -66,4 +66,18 @@ public class ProductDao {
 		
 		return al;
 	}
+	
+	public int UpdateById(Product p) throws SQLException {
+		Connection con = DBConnection.getConnection();
+		String query = "update product set p_name = ?, description = ?, price = ?, stock = ?, ca_id = ? where p_id = ?";
+		PreparedStatement pstmt = con.prepareStatement(query);
+		pstmt.setString(1, p.getName());
+		pstmt.setString(2, p.getText());
+		pstmt.setFloat(3, p.getPrice());
+		pstmt.setInt(4, p.getStock());
+		pstmt.setInt(5, p.getCaId());
+		pstmt.setInt(6, p.getId());
+		int update = pstmt.executeUpdate();
+		return update;
+	}
 }

@@ -38,7 +38,7 @@ if(hs.getAttribute("username")==null || hs==null) {
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="price">Price ($) <span class="required">*</span></label>
+                    <label for="price">Price <span class="required">*</span></label>
                     <input type="number" id="price" name="price" step="0.01" min="0" placeholder="0.00" required>
                 </div>
                 <div class="form-group">

@@ -104,7 +104,7 @@ if (hs.getAttribute("username") == null || hs == null) {
 								</div>
 								<div class="detail-item">
 									<div class="detail-label">Price</div>
-									<div class="detail-value">$ <%= p.getPrice() %></div>
+									<div class="detail-value"><%= p.getPrice() %></div>
 								</div>
 								<div class="detail-item">
 									<div class="detail-label">Stock</div>

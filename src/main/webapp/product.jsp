@@ -54,7 +54,7 @@
 				<button class="action-btn display-btn">View All Products</button>
 			</div>
 
-			<div class="management-card" onclick="navigateTo('update-product')">
+			<div class="management-card" onclick="navigateTo('update_product')">
 				<div class="card-title">✏️ Update Product</div>
 				<p class="card-description">Modify product details, pricing, and
 					inventory</p>

@@ -89,7 +89,7 @@ if (hs.getAttribute("username") == null || hs == null) {
 						<td><%= p.getId() %></td>
 						<td><%= p.getName() %></td>
 						<td><%= p.getText() %></td>
-						<td class="price-cell">$<%= p.getStock() %></td>
+						<td class="price-cell"><%= p.getPrice() %></td>
 						<td class="stock-cell"><%= p.getStock() %></td>
 						<td><span class="category-badge"><%= categoryName %></span></td>
 					</tr>
