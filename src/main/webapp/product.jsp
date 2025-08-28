@@ -11,8 +11,8 @@
 		<div class="nav-left">
 			<div class="logo">Dashboard</div>
 			<div class="nav-links">
-				<a href="index.jsp">Home</a> <a href="customers.jsp">Customers</a> <a
-					href="inventory.jsp">Inventory</a>
+				<a href="index.jsp">Home</a>
+				<a href="register.jsp">Register</a>
 			</div>
 		</div>
 		<div class="user-section">
@@ -40,14 +40,14 @@
 				<button class="action-btn create-btn">Add New Product</button>
 			</div>
 
-			<div class="management-card" onclick="navigateTo('search-product')">
+			<div class="management-card" onclick="navigateTo('search_product')">
 				<div class="card-title">🔍 Search Products</div>
 				<p class="card-description">Find products by ID, name, or
 					category quickly</p>
 				<button class="action-btn search-btn">Search Products</button>
 			</div>
 
-			<div class="management-card" onclick="navigateTo('view-products')">
+			<div class="management-card" onclick="navigateTo('view_all_products')">
 				<div class="card-title">📊 View All Products</div>
 				<p class="card-description">Display complete product catalog
 					with stock levels</p>
@@ -66,13 +66,6 @@
 				<p class="card-description">Remove discontinued products from
 					catalog</p>
 				<button class="action-btn delete-btn">Delete Product</button>
-			</div>
-
-			<div class="management-card" onclick="navigateTo('product-reports')">
-				<div class="card-title">📈 Product Reports</div>
-				<p class="card-description">Generate inventory and sales
-					analytics</p>
-				<button class="action-btn reports-btn">Generate Reports</button>
 			</div>
 		</div>
 	</section>
