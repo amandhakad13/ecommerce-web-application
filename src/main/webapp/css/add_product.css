@@ -1,187 +1,196 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	min-height: 100vh;
-	color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
 }
 
 .back-btn {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	background: rgba(255, 255, 255, 0.2);
-	color: white;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 25px;
-	font-weight: 500;
-	transition: all 0.3s ease;
-	backdrop-filter: blur(10px);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .back-btn:hover {
-	background: rgba(255, 255, 255, 0.3);
-	transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 .insert-container {
-	max-width: 600px;
-	margin: 80px auto 20px;
-	padding: 0 20px;
+    max-width: 600px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
 }
 
 .insert-header {
-	text-align: center;
-	margin-bottom: 30px;
-	color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .insert-header h1 {
-	font-size: 2.5rem;
-	font-weight: 300;
-	margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .insert-header p {
-	font-size: 1.1rem;
-	opacity: 0.9;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 form {
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(15px);
-	border-radius: 20px;
-	padding: 30px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
-	display: block;
-	color: white;
-	font-weight: 500;
-	margin-bottom: 8px;
-	font-size: 0.95rem;
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
 }
 
 .required {
-	color: #ff6b6b;
+    color: #ff6b6b;
 }
 
-.form-group input, .form-group textarea, .form-group select {
-	width: 100%;
-	padding: 12px 15px;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.1);
-	color: white;
-	font-size: 1rem;
-	transition: all 0.3s ease;
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
-.form-group input::placeholder, .form-group textarea::placeholder {
-	color: rgba(255, 255, 255, 0.6);
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.form-group input:focus, .form-group textarea:focus, .form-group select:focus
-	{
-	outline: none;
-	border-color: rgba(255, 255, 255, 0.8);
-	background: rgba(255, 255, 255, 0.15);
-	transform: translateY(-2px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form-group select {
-	color: white;
+    color: white;
 }
 
 .form-group select option {
-	background: #333;
-	color: white;
+    background: #333;
+    color: white;
 }
 
 .form-row {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .button-group {
-	display: flex;
-	gap: 15px;
-	justify-content: center;
-	margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.insert-btn, .cancel-btn {
-	padding: 12px 30px;
-	border: none;
-	border-radius: 25px;
-	font-size: 1rem;
-	font-weight: 600;
-	cursor: pointer;
-	transition: all 0.3s ease;
+.insert-btn,
+.cancel-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .insert-btn {
-	background: linear-gradient(135deg, #4CAF50, #45a049);
-	color: white;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
 }
 
 .cancel-btn {
-	background: linear-gradient(135deg, #f44336, #d32f2f);
-	color: white;
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    color: white;
 }
 
-.insert-btn:hover, .cancel-btn:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.insert-btn:hover,
+.cancel-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.success-msg, .error-msg {
-	text-align: center;
-	margin: 20px 0;
-	padding: 15px;
-	border-radius: 10px;
-	font-weight: 500;
+.success-msg,
+.error-msg {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 500;
 }
 
 .success-msg {
-	background: rgba(76, 175, 80, 0.2);
-	color: #4CAF50;
-	border: 1px solid rgba(76, 175, 80, 0.3);
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    border: 1px solid rgba(76, 175, 80, 0.3);
 }
 
 .error-msg {
-	background: rgba(244, 67, 54, 0.2);
-	color: #f44336;
-	border: 1px solid rgba(244, 67, 54, 0.3);
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+    border: 1px solid rgba(244, 67, 54, 0.3);
 }
 
 h3 {
-	color: white;
-	text-align: center;
+    color: white;
+    text-align: center;
 }
 
-@media ( max-width : 768px) {
-	.form-row {
-		grid-template-columns: 1fr;
-	}
-	.button-group {
-		flex-direction: column;
-	}
-	.insert-container {
-		margin: 60px auto 20px;
-	}
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .insert-container {
+        margin: 60px auto 20px;
+    }
 }

@@ -53,7 +53,7 @@
                 <p class="card-description">Manage all products available in the store.</p>
             </div>
             
-            <div class="management-card">
+            <div class="management-card" onclick="navigateTo('category')">
                 <div class="card-icon">🏷️</div>
                 <h3 class="card-title">Category Management</h3>
                 <p class="card-description">Manage product categories to organize your store’s inventory.</p>

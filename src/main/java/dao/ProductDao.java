@@ -80,4 +80,13 @@ public class ProductDao {
 		int update = pstmt.executeUpdate();
 		return update;
 	}
+	
+	public int delete(int id) throws SQLException {
+		Connection con = DBConnection.getConnection();
+		String query = "delete from product where p_id = ?";
+		PreparedStatement pstmt = con.prepareStatement(query);
+		pstmt.setInt(1, id);
+		int delete = pstmt.executeUpdate();
+		return delete;
+	}
 }

@@ -234,13 +234,3 @@ body {
 	transform: translateY(-2px);
 	box-shadow: 0 5px 15px rgba(245, 101, 101, 0.4);
 }
-
-.report-btn {
-	background: linear-gradient(135deg, #38b2ac, #319795);
-	color: white;
-}
-
-.report-btn:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(56, 178, 172, 0.4);
-}

@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+	color: #333;
+}
+
+.back-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+}
+
+.back-btn:hover {
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateY(-2px);
+}
+
+.delete-container {
+	max-width: 700px;
+	margin: 80px auto 20px;
+	padding: 0 20px;
+}
+
+.delete-header {
+	text-align: center;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.delete-header h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.delete-header p {
+	font-size: 1.1rem;
+	opacity: 0.9;
+}
+
+form {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+	padding: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 8px;
+	font-size: 0.95rem;
+}
+
+.required {
+	color: #ff6b6b;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 12px 15px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus {
+	outline: none;
+	border-color: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.15);
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-group {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.search-btn, .delete-btn, .cancel-btn {
+	padding: 12px 30px;
+	border: none;
+	border-radius: 25px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.search-btn {
+	background: linear-gradient(135deg, #2196F3, #1976D2);
+	color: white;
+}
+
+.delete-btn {
+	background: linear-gradient(135deg, #f44336, #d32f2f);
+	color: white;
+}
+
+.cancel-btn {
+	background: linear-gradient(135deg, #757575, #616161);
+	color: white;
+}
+
+.search-btn:hover, .delete-btn:hover, .cancel-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-info {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+	padding: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	color: white;
+	margin-bottom: 20px;
+}
+
+.info-header {
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #ff6b6b;
+}
+
+.info-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.info-item {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 12px;
+	border-radius: 8px;
+}
+
+.info-label {
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 0.9rem;
+}
+
+.info-value {
+	font-size: 1rem;
+	margin-top: 3px;
+}
+
+.warning-box {
+	background: rgba(255, 107, 107, 0.2);
+	border: 2px solid rgba(255, 107, 107, 0.4);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.success-msg, .error-msg {
+	text-align: center;
+	margin: 20px 0;
+	padding: 15px;
+	border-radius: 10px;
+	font-weight: 500;
+}
+
+.success-msg {
+	background: rgba(76, 175, 80, 0.2);
+	color: #4CAF50;
+	border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.error-msg {
+	background: rgba(244, 67, 54, 0.2);
+	color: #f44336;
+	border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+h3 {
+	color: white;
+	text-align: center;
+}
+
+@media ( max-width : 768px) {
+	.info-row {
+		grid-template-columns: 1fr;
+	}
+	.button-group {
+		flex-direction: column;
+	}
+	.delete-container {
+		margin: 60px auto 20px;
+	}
+}
