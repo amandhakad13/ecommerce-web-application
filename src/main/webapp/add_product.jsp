@@ -90,7 +90,7 @@ if(hs.getAttribute("username")==null || hs==null) {
         	
         	if(insert>0) {
         		%><h3><% 
-        		out.println("Product Addes Successfully");
+        		out.println("Product Added Successfully");
         		%></h3><% 
         	}
         	else {
