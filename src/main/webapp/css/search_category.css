@@ -1,0 +1,146 @@
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	margin-bottom: 2rem;
+	padding: 0.75rem 1.5rem;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	backdrop-filter: blur(10px);
+	transition: all 0.3s;
+}
+
+.back-link:hover {
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateX(-5px);
+}
+
+.form-card {
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	border-radius: 20px;
+	padding: 3rem;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-title {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.form-group {
+	margin-bottom: 2rem;
+}
+
+.form-label {
+	display: block;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+}
+
+.form-input {
+	width: 100%;
+	padding: 1rem;
+	border: 2px solid #e2e8f0;
+	border-radius: 10px;
+	font-size: 1rem;
+	transition: all 0.3s;
+	background: white;
+}
+
+.form-input:focus {
+	outline: none;
+	border-color: #4299e1;
+	box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.btn {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 10px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s;
+	min-width: 120px;
+}
+
+.btn-search {
+	background: linear-gradient(135deg, #4299e1, #3182ce);
+	color: white;
+	width: 100%;
+}
+
+.btn-search:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(66, 153, 225, 0.4);
+}
+
+.result-card {
+	background: #f7fafc;
+	border-radius: 15px;
+	padding: 2rem;
+	margin-top: 2rem;
+	border-left: 4px solid #4299e1;
+}
+
+.result-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #2d3748;
+	margin-bottom: 1rem;
+}
+
+.result-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.75rem;
+	padding: 0.5rem 0;
+}
+
+.result-label {
+	font-weight: 600;
+	color: #4a5568;
+}
+
+.result-value {
+	color: #2d3748;
+}
+
+.no-result {
+	background: #fed7d7;
+	color: #c53030;
+	padding: 1rem;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 2rem;
+}

@@ -56,7 +56,7 @@ if(hs.getAttribute("username")==null || hs==null) {
 			</div>
 
 			<div class="management-card"
-				onclick="navigateTo('view_all_categories')">
+				onclick="navigateTo('view_all_category')">
 				<div class="card-title">📊 View All Categories</div>
 				<p class="card-description">Display complete category tree with
 					product counts</p>
